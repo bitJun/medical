@@ -55,7 +55,6 @@ router.beforeEach(async to => {
         background: 'rgba(0, 0, 0, 0.7)',
       })
       try {
-        console.log('userinfo', userinfo)
         await store.dispatch('menu/generateMenus', userinfo)
         loadingInstance.close()
         return to.fullPath

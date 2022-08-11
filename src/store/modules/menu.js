@@ -88,7 +88,6 @@ export default {
       } = await GetMenus({ role: userinfo.role })
 
       if (+code === 200) {
-        console.log('asyncRoutes', asyncRoutes)
         // 过滤出需要添加的动态路由
         // const filterRoutes = getFilterRoutes(asyncRoutes, data)
         const filterRoutes = asyncRoutes
